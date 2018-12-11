@@ -1,3 +1,7 @@
 *.uvguix.*
 *.uvoptx
+*.scvd
 DebugConfig/
+output/
+JLinkLog.txt
+JLinkSettings.ini
