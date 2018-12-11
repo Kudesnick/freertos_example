@@ -57,6 +57,11 @@
  *                                        PRIVATE FUNCTIONS
  **************************************************************************************************/
 
+void vApplicationStackOverflowHook( TaskHandle_t xTask, char *pcTaskName )
+{
+
+}
+
 void vTaskA( void *pvParametrs)
 {
 	while(true)
@@ -79,7 +84,7 @@ void vTaskB( void *pvParametrs)
 
 int main(void)
 {
-    for (uint8_t i = 0; i < 30; i++)
+    for (uint8_t i = 0; i < 119; i++)
     {
         xTaskCreate( &vTaskA,
                     (const char *)NULL,
